@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:lavender;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, lavender 40%, rgb(105, 70, 180) 60%);
+}
+.MAIN{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    flex: 1;
+    background-color:whitesmoke;
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    width: 500px;
+    height: 400px;
+}
+.calc{    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    
+}
+.bmiForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.bmiForm label{
+    font-size: larger;
+    font-weight: bolder;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.Form-Gender{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.9375rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.Form-Gender h6{
+    font-size: larger;
+    font-weight: bolder;
+}
+.Form-Gender label{
+    display: inline-flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    width: auto;
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    margin: 10px;
+    font-weight: bold;
+}
+.Form label{
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 0.3rem;
+}
+.Form input{
+    width: 100%;
+    height: 25px;
+    font-weight: bold;
+    align-items: flex-start;
+    justify-content: center;
+    border-style: groove;
+    box-sizing: border-box;
+}
+.calc button{
+    margin-top: 3%;
+    width: 50%;
+    padding: 5px;
+    background-color:lightgray;
+    font-weight: bolder;
+    font-size: large;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+.logo{
+    width: 100px;
+    height: auto;
+}
+.nav-links{
+    align-items: left;
+    display: flex;
+    font-size: larger;
+    font-weight: bolder;
+    gap: 4rem;
+}
+.calc h2{
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+}

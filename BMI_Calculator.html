@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BMI_Calculator.css">
+    <link rel="icon" type="image/png" href="Logo.png">
+    <title>Angad's BMI Calculator</title>
+</head>
+<script src="BMI_Calculator.js"></script>
+<body>
+    <header>
+        <a href="BMI_Calculator.html"><img src="Logo.png" alt="BMI Calculator Logo" class="logo"></a>
+        <nav class="nav-links">
+            <a href="Whats_BMI.html" style="color:white">Whats BMI?</a>
+            <a href="Average_BMI.html" style="color:white">Average BMI</a>
+        </nav>
+    </header>
+    <div class="MAIN">
+        <main>
+            <div class="calc">
+                <h2>BMI Calculator</h2>
+                <form id="bmiForm">
+                    <div class="Form-Gender">
+                        <h6>Gender:</h6>
+                        <label><input type="radio" id="male" name="gender" required>-Male</label>
+                        <label><input type="radio" id="female" name="gender" required checked>-Female</label>
+                    </div>
+                    <div class="Form">
+                        <label for="age" style="font-weight: bolder; font-size: larger;">-Age (2-120):</label>
+                        <input type="number" id="age" name="age" required min="2" max="120">
+                    </div>
+                    <div class="Form">
+                        <label for="weight" style="font-weight: bolder; font-size: larger;">-Weight (kg):</label>
+                        <input type="number" id="weight" name="weight" required>
+                    </div>
+                    <div class="Form">
+                        <label for="height" style="font-weight: bolder; font-size: larger;">-Height (cm):</label>
+                        <input type="number" id="height" name="height" required>
+                    </div>
+                        <button type="submit" style="background-color:rgb(105, 70, 180); color: whitesmoke;">Calculate BMI</button>
+                </form>
+                <h3 id="result"></h3>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
